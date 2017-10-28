@@ -1,0 +1,36 @@
+
+mixin row(c1, c2, c3, c4)
+    tr                                                                                                                      
+        td= c1
+        td= c2
+        td= c3
+        td= c4
+//end                                                                                                                       
+                                                                                                                            
+doctype html                                                                                                                
+html                                                                                                                        
+    head                                                                                                                    
+        style(type='text/css').                                                                                             
+                table, th, td {                                                                                             
+                    border: 1px solid black;                                                                                
+                    border-collapse: collapse;                                                                              
+                }                                                                                                           
+                                                                                                                            
+                th, td {                                                                                                    
+                    padding: 5px;                                                                                           
+                }                                                                                                           
+    body                                                                                                                    
+        p Hello #{name}!                                                                                                    
+        p Admire the following table :-)!
+        table                                                                                                               
+            thead                                                                                                           
+                tr                                                                                                          
+                    th Col1
+                    th Col2
+                    th Col3
+                    th Col4
+            tbody                                                                                                           
+                each val, index in data
+                    +row(val['c1'], val['c2'], val['c3'], val['c4'])                           
+                                                                                                                            
+        p Regards, <br/>Pankaj

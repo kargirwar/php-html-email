@@ -1,0 +1,6 @@
+{
+  "require": {
+    "sendgrid/sendgrid": "~6.0",
+    "pug-php/pug": "^3.0"
+  }
+}
