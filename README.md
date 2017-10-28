@@ -5,6 +5,6 @@ cd php-html-email
 
 composer update
 
-export SENDGRID_API_KEY='<your key>'
+export SENDGRID_API_KEY='your key'
 
 php test.php
