@@ -3,9 +3,9 @@ require 'vendor/autoload.php';
 main();
 function main()
 {
-	$from = new SendGrid\Email("Pankaj Kargirwar", "pankaj@kargirwar.com");
+	$from = new SendGrid\Email("Example User", "xxx@xxx.xxx");
 	$subject = "Sending with SendGrid is Fun";
-	$to = new SendGrid\Email("Pankaj Kargirwar", "kargirwar@gmail.com");
+	$to = new SendGrid\Email("Example User", "xxx@xxx.com");
 	$content = new SendGrid\Content("text/html", getContent());
 	$mail = new SendGrid\Mail($from, $subject, $to, $content);
 	$apiKey = getenv('SENDGRID_API_KEY');
